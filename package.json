@@ -1,0 +1,23 @@
+{
+  "name": "vector-db-ts",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun --watch src/main.ts",
+    "build": "bun build src/main.ts --outdir ./dist --target bun",
+    "start": "bun dist/main.js",
+    "test": "bun test",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "express": "5.0.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/express": "5.0.0",
+    "bun-types": "1.1.38",
+    "typescript": "5.7.3"
+  }
+}
